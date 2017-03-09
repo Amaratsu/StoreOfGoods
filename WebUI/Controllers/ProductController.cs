@@ -13,20 +13,24 @@ namespace WebUI.Controllers
         private EfDbContext db = new EfDbContext();
         public int PageSize = 4;
 
-        public ViewResult List(int page = 1)
+        public ViewResult List(string category, int page = 1)
         {
             ProductsListViewModel model = new ProductsListViewModel
             {
                 Products = db.Products
-                .OrderBy(p => p.ProductId)
-                .Skip((page - 1) * PageSize)
-                .Take(PageSize),
+                    .Where(p => category == null || p.Category == category)
+                    .OrderBy(p => p.ProductId)
+                    .Skip((page - 1) * PageSize)
+                    .Take(PageSize),
                 PagingInfo = new PagingInfo
                 {
                     CurrentPage = page,
                     ItemsPerPage = PageSize,
-                    TotalItems = db.Products.Count()
-                }
+                    TotalItems = category == null
+                        ? db.Products.Count()
+                        : db.Products.Count(e => e.Category == category)
+                },
+                CurrentCategory = category
             };
             return View(model);
         }

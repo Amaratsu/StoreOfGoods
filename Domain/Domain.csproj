@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\EfDbContext.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductDbInitializer.cs" />
