@@ -1,7 +1,7 @@
 ﻿@model Domain.Entities.Product
 
-<div class="col-md-4 col-xs-6 well">
-
+<div class="col-md-4 col-xs-6">
+        <br/>
         <h4>
             @using (Html.BeginForm("AddToCart", "Cart"))
             {
@@ -12,7 +12,6 @@
             <strong>@Model.Name</strong>
 
         </h4>
-        @*<span class="lead">@Model.Description</span>
-    <br/>*@
+        @*<span class="lead">@Model.Description</span>*@
         <span class="pull-left label label-success">@Model.Price.ToString("F") руб</span>
 </div>

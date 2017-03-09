@@ -11,7 +11,7 @@ namespace WebUI.Controllers
     public class ProductController : Controller
     {
         private EfDbContext db = new EfDbContext();
-        public int PageSize = 4;
+        public int PageSize = 9;
 
         public ViewResult List(string category, int page = 1)
         {
