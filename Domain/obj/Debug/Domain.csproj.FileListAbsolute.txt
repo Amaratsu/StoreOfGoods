@@ -18,3 +18,16 @@ D:\Projects\StoreOfGoods\Domain\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projects\StoreOfGoods\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 D:\Projects\StoreOfGoods\Domain\obj\Debug\Domain.dll
 D:\Projects\StoreOfGoods\Domain\obj\Debug\Domain.pdb
+D:\Projects\StoreOfGoods\Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.Helpers.dll
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.Mvc.dll
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.Razor.dll
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.dll
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.Helpers.xml
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.Mvc.xml
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.Razor.xml
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.xml
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.Razor.xml
