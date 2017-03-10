@@ -221,7 +221,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\XiomiRedmi4.jpeg" />
+    <Content Include="Content\images\iPhone5s.jpg" />
+    <Content Include="Content\images\A4TechBloodyV7.jpg" />
+    <Content Include="Content\images\A4TechBloodyV8.jpg" />
+    <Content Include="Content\images\AppleAirPods.jpeg" />
+    <Content Include="Content\images\AppleiPhone7.jpeg" />
+    <Content Include="Content\images\LogitechG403.jpeg" />
     <Content Include="Content\images\noImages.png" />
+    <Content Include="Content\images\SamsungGalaxyS7.jpg" />
+    <Content Include="Content\images\SennheiserHD800.jpg" />
+    <Content Include="Content\images\SennheiserHD650.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

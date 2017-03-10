@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class ProductDbInitializer : DropCreateDatabaseIfModelChanges<EfDbContext>
+    public class ProductDbInitializer : DropCreateDatabaseAlways<EfDbContext>
     {
         protected override void Seed(EfDbContext db)
         {
@@ -29,7 +29,7 @@ namespace Domain.Entities
             });
             db.Products.Add(new Product
             {
-                Name = "Смартфон Samsung Galaxy S7 Edge 32GB Black Onyx [G935F]",
+                Name = "Смартфон Samsung Galaxy S7 Edge",
                 Description =
                     "Android, экран 5.5\" AMOLED (1440x2560), ОЗУ 4 ГБ, флэш-память 32 ГБ, карты памяти, камера 12 Мп, аккумулятор 3600 мАч, 1 SIM, цвет черный",
                 Category = "Смартфоны",
@@ -37,7 +37,7 @@ namespace Domain.Entities
             });
             db.Products.Add(new Product
             {
-                Name = "Смартфон iPhone 5s 16GB Space Gray",
+                Name = "Смартфон iPhone 5s 16GB Space",
                 Description =
                     "Apple iOS, экран 4\" IPS (640x1136), ОЗУ 1 ГБ, флэш-память 16 ГБ, камера 8 Мп, аккумулятор 1560 мАч, 1 SIM, цвет темно-серый",
                 Category = "Смартфоны",
@@ -61,13 +61,36 @@ namespace Domain.Entities
             });
             db.Products.Add(new Product
             {
-                Name = "Игровая мышь Logitech G403 Prodigy [910-004824]",
+                Name = "Игровая мышь Logitech G403",
                 Description =
                    "пполноразмерная игровая мышь для ПК, проводная, USB, сенсор оптический 12000 dpi, 6 кнопок, колесо с нажатием, цвет черный",
                 Category = "Игровые мыши",
                 Price = 124.30m
             });
-            db.SaveChanges();
+            db.Products.Add(new Product
+            {
+                Name = "Наушники с микрофоном Apple AirPods",
+                Description =
+                   "Наушники Apple AirPods эффективно передают данные по беспроводной сети, воспроизводят звук высокого качества и работают без подзарядки в режиме прослушивания музыки до 5 часов. При этом они поддерживают функции Siri: голосовой помощник доступен с помощью двойного тапа по поверхности чашки.",
+                Category = "Наушники",
+                Price = 520.00m
+            });
+            db.Products.Add(new Product
+            {
+                Name = "Наушники Sennheiser HD 800",
+                Description =
+                   "наушники, аудиофильские, оформление открытое, 6-51000 Гц, 300 Ом, кабель 3 м",
+                Category = "Наушники",
+                Price = 1800.00m
+            });
+            db.Products.Add(new Product
+            {
+                Name = "Наушники Sennheiser HD 650",
+                Description =
+                   "Дорогие аудиофильские наушники для любителей и профессионалов. Имеют неокрашенное звучание и ровную частотную отдачу благодаря вручную подобранным парам излучателей, наличию акустического шелка внутри чашек, оптимизированной магнитной системе и легким алюминиевым катушкам.",
+                Category = "Наушники",
+                Price = 758.83m
+            });
             base.Seed(db);
         }
     }
