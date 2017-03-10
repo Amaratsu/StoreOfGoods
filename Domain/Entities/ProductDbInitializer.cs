@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class ProductDbInitializer : DropCreateDatabaseAlways<EfDbContext>
+    public class ProductDbInitializer : DropCreateDatabaseIfModelChanges<EfDbContext>
     {
         protected override void Seed(EfDbContext db)
         {
@@ -67,7 +67,7 @@ namespace Domain.Entities
                 Category = "Игровые мыши",
                 Price = 124.30m
             });
-
+            db.SaveChanges();
             base.Seed(db);
         }
     }

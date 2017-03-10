@@ -1,8 +1,15 @@
 ﻿@model Domain.Entities.Product
 
-<div class="col-md-4 col-xs-6">
-        <br/>
-        <h4>
+<div class="col-md-4 col-xs-6 well well-sm text-center">
+    @if (Model.ImageData != null)
+    {
+            <img class="imgStyle" width="150" height="250" src="@Url.Action("GetImage", "Product", new { Model.ProductId })"/>
+    }
+    else
+    {
+            <img class="imgStyle" width="150" height="250" src="~/Content/images/noImages.png"/>
+    }
+        <h5>
             @using (Html.BeginForm("AddToCart", "Cart"))
             {
                 @Html.HiddenFor(x => x.ProductId)
@@ -11,7 +18,7 @@
             }
             <strong>@Model.Name</strong>
 
-        </h4>
+        </h5>
         @*<span class="lead">@Model.Description</span>*@
         <span class="pull-left label label-default">@Model.Price.ToString("F") руб</span>
 </div>

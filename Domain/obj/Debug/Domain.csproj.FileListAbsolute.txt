@@ -15,7 +15,6 @@ D:\Projects\StoreOfGoods\Domain\bin\Debug\EntityFramework.dll
 D:\Projects\StoreOfGoods\Domain\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\StoreOfGoods\Domain\bin\Debug\EntityFramework.xml
 D:\Projects\StoreOfGoods\Domain\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projects\StoreOfGoods\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 D:\Projects\StoreOfGoods\Domain\obj\Debug\Domain.dll
 D:\Projects\StoreOfGoods\Domain\obj\Debug\Domain.pdb
 D:\Projects\StoreOfGoods\Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -31,3 +30,4 @@ D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.Razor.xml
 D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.xml
 D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Projects\StoreOfGoods\Domain\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Projects\StoreOfGoods\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache

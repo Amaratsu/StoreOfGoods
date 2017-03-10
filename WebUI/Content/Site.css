@@ -42,5 +42,28 @@ textarea {
 }
 
 .validation-summary-valid {
-    display: none;
+    display: none; }
+
+.imgStyle {
+    max-width: 60%;
+    height: 275px;  
+}
+
+@media (max-width: 300px) {
+    img {
+        max-width: 60%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 420px) {
+    img {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 760px) {
+    img {
+        max-width: 20%;
+    }
 }
