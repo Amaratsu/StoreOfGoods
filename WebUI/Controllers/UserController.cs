@@ -37,12 +37,16 @@ namespace WebUI.Controllers
                     product.ImageData = new byte[image.ContentLength];
                     image.InputStream.Read(product.ImageData, 0, image.ContentLength);
                 }
-
-                db.Entry(product).State = product.ProductId == 0 ? EntityState.Added : EntityState.Modified;
-
+                if (product.ProductId == 0)
+                {
+                    db.Entry(product).State= EntityState.Added;
+                    db.SaveChanges();
+                    return Redirect("~/");
+                }
+                db.Entry(product).State = EntityState.Modified;
                 db.SaveChanges();
                 TempData["message"] = $"Изменения в товаре \"{product.Name}\" были сохранены";
-                return Redirect("~/");
+                return RedirectToAction("Index");
             }
             else
             {
@@ -106,7 +110,7 @@ namespace WebUI.Controllers
             }
             db.Products.Remove(product);
             db.SaveChanges();
-            TempData["message"] = $"Товар \"{product.Name}\" был удален";
+            TempData["message"] = $"Товар \"{product.Name}\" успешно удален";
             return RedirectToAction("Index");
         }
     }
