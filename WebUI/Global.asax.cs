@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Security.Policy;
 using System.Web;
+using System.Web.Hosting;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -15,7 +17,7 @@ namespace WebUI
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new ProductDbInitializer());
+            Database.SetInitializer(new ProductDbInitializer(HostingEnvironment.MapPath("~/Content/images")));
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
